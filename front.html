@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/stylos.css">
+
+</head>
+
+<body>
+    <style>
+        body {
+            background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(https://img.freepik.com/free-photo/japandi-living-room-interior-design_53876-145502.jpg?w=996&t=st=1686756383~exp=1686756983~hmac=e6f73bc0beaf5e29b257d803dda1663fce6652e83e5f9cdbf0bb03ad295af438);
+            background-size: cover;
+            background-position:fixed;
+            font-size: 20px;
+
+
+        }
+
+        .navbar {
+            border-bottom: 4px#ffc107 solid;
+        }
+
+
+        .seccion-1 {
+            background-color: rgba(157, 157, 157, 0.298);
+            height: 500px;
+
+
+
+        }
+
+        .nav-link:hover {
+            border-bottom: 3px#ffc107 solid;
+            transition: .3s;
+
+        }
+
+        .modal {
+            width: 300px;
+        }
+
+        .modal-content {
+            width: 300px;
+        }
+
+        .list-group-item:hover {
+            background-color: rgba(62, 60, 60, 0.247);
+
+
+        }
+
+        .fila2 {
+            background-color: rgba(31, 28, 22, 0.327);
+        }
+
+        footer {
+            height: 75px;
+            background-color: rgba(0, 0, 0, 0.584);
+            margin-top: 20px;
+        }
+
+        .lista-footer {
+            list-style: none;
+        }
+
+        @media screen and (max-width:768px) {
+            .nav-display {
+                display: none;
+            }
+
+
+        }
+
+        .seccion-2 {
+            background-color: rgba(45, 41, 41, 0.06);
+        
+
+
+
+
+        }
+
+        .seccion-3 {
+            background-color: rgba(45, 41, 41, 0.06);
+
+
+
+
+        }
+   
+    </style>
+    <div class="container">
+        <nav class="navbar mt-1">
+
+            <a class="navbar-brand fs-3 text-light fw-bold " href="">HOU<span class="text-warning">SES</span></a>
+            <a class="nav-link nav-display " href="#list-item-1"> Que es nuestra empresa?</a>
+            <a class="nav-link nav-display " href="#list-item-2">Lugares</a>
+            <a class="nav-link nav-display " href="#list-item-3">Precios</a>
+
+            <button class="navbar-toggler" data-bs-toggle="modal" data-bs-target="#exampleModal"> <span
+                    class="navbar-toggler-icon"></span></button>
+
+
+
+
+
+
+
+
+    </div>
+    </nav>
+    </div>
+
+    <main>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen  ">
+                <div class="modal-content">
+                    <div class="modal-header bg-warning ">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">MENU</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-group list-group-flush ">
+                            <li class="list-group-item"><a class="nav-link" href="">Inicio</a></li>
+                            <li class="list-group-item"><a class="nav-link" href="./registrarCasa/venta.php">Registrar Casa</a></li>
+                            <li class="list-group-item"><a class="nav-link" href="./comprarCasa/compra.php">Casas en venta</a></li>
+
+                            <li class="list-group-item"><a class="nav-link" href="login.php">Cerras sesion</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="modal-footer bg-warning ">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="seccion-1 p-4 text-center ">
+
+            <h1 class=" fw-bold text-light "> Quienes somos?</h1>
+            <p class="text-light">Somos una empresa que te ayudara a alquilar tu cosa y alquilar para vivir en lugares comodos a
+                precios adecuado a tu sistema economico </p>
+            <button class=" btn btn-warning w-50 fs-2 mostrar   " id="mostrar ">Ver mas</button>
+
+
+
+        </section>
+
+
+    </main>
+    <div class="container">
+
+        <section class="seccion-2">
+
+
+
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+                class="scrollspy-example" tabindex="0">
+
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12 p-5 ">
+                        <h1 class="text-light" id="list-item-1">Que es nuetra empresa? </h1>
+
+
+                        <p class="text-light">Somos un exclusivo servicio de alquiler de casas, donde la comodidad y las experiencias inolvidables se unen en perfecta armonía! Somos una empresa dedicada a brindar el más alto nivel de calidad y satisfacción a nuestros clientes. Nuestro objetivo es ofrecerles el escape perfecto a hogares acogedores y lujosos, ubicados en los destinos más deslumbrantes.</p>
+
+                    </div>
+
+                    <div class="col-lg-6 col-sm-6 ">
+                        <div class="p-2">
+
+                            <img class="rounded" width="100%"
+                                src="https://media.istockphoto.com/id/1454180339/es/foto/j%C3%B3venes-empresarios-sonrientes-trabajando-juntos-en-una-computadora-port%C3%A1til-en-una-oficina.jpg?s=612x612&w=0&k=20&c=yjE5bUYWUxNG4GTyQKk6YR2wBUzsgKIzU2uzRUigl54="
+                                alt="">
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </section>
+
+      <section class="seccion-3 my-5" >
+        <div class="container" >
+            <div class="row">
+                <div class="col-lg-6 col-sm-12 text-light  p-5" id="list-item-2"  >
+                    <h1>Lugares</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus ipsum magni autem necessitatibus omnis doloremque ut! Ad quam quo est fuga tenetur, impedit voluptas. Quas quam sed ipsa illum eveniet?</p>
+
+
+                </div>
+
+                <div class="col-lg-6  col-sm-6">
+                    <div>
+                        <img  class="rounded"  width="100%" src="https://media.istockphoto.com/id/1147674296/es/foto/casa-unifamiliar-de-nueva-construcci%C3%B3n-en-barrio-residencial-en-el-sur.jpg?s=612x612&w=0&k=20&c=f5S30gH0-Hy4o_j4qX6GjIQBh2Ps1KEpQnyjg3n6OAs=" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </section>
+
+
+
+      <section class="seccion-3 my-5" >
+        <div class="container" >
+            <div class="row">
+                <div class="col-lg-6 col-sm-12 text-light  p-5" id="list-item-3"  >
+                    <h1 id="" >Precios</h1>
+                    <p>Tenemos diferente tipos de hogares para cada tipo de situaciones economicas de cada cliente. Por esas razones somos muy recomendados por muchas personas porque nosotros les cambiamos la vida</p>
+
+
+                </div>
+
+                <div class="col-lg-6  col-sm-6">
+                    <div>
+                        <img  class="rounded"  width="100%" src="https://media.istockphoto.com/id/1419727338/es/vector/empleada-con-alto-estr%C3%A9s.jpg?s=612x612&w=0&k=20&c=gyShoEukjWe1VWBQeJgfx9THx9OqRUl9LAGH2LxfTpE=" alt="">
+                    </div>
+                </div>
+            </div>
+        </diddddwsv>
+
+      </section>
+
+
+    </div>
+
+
+
+
+
+    <div id="list-example" class="list-group">
+
+    </div>
+    <footer>
+        <div class="d-flex" >  
+<div class="mx-3 mt-2 " >
+
+        <a  href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+            fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+        </svg></a>
+    </div>
+<div class="mt-2" >
+
+
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+            fill="currentColor" class="bi bi-whatsapp text-success " viewBox="0 0 16 16">
+            <path
+                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+        </svg></a>
+    </div>
+
+    </div>
+       
+    </footer>
+
+    <script>
+
+        $(document).ready(function () {
+            $('.mostrar').click(function () {
+                Swal.fire({
+                    title: '',
+                    text: 'En nuestra plataforma, te ofrecemos una experiencia única para encontrar la casa de tus sueños. Ya sea que estés buscando tu primer hogar, un lugar espacioso para tu familia o una propiedad de inversión, aquí encontrarás una amplia selección de casas de alta calidad , Nuestro objetivo es hacer que el proceso de compra de una casa sea sencillo y emocionante para ti. Navega por nuestro catálogo en línea, donde encontrarás descripciones detalladas, fotografías de alta resolución y recorridos virtuales de las propiedades. Te brindamos toda la información que necesitas para tomar una decisión informada',
+                    width: '100%',
+                    height: '100%',
+                    confirmButtonWidth: '300px'
+                });
+
+            });
+
+        })
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
